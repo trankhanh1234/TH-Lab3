@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai5</title>
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <td>row 1</td>
+            <td>row2</td>
+        </tr>
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2</td>
+        </tr>
+    </table>
+    <input type="button" onclick="insert_row()" value="insert row">
+
+    <script>
+        function insert_row() {
+            let tr = document.createElement('tr');
+            let td = document.createElement('td');
+            let td2 = document.createElement('td');
+            td.innerHTML = "1";
+            td2.innerHTML = "2";
+            tr.appendChild(td);
+            tr.appendChild(td2);
+            document.getElementById('table').appendChild(tr);
+        }
+    </script>
+
+</body>
+
+</html>

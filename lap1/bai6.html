@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai6</title>
+</head>
+
+<body>
+    <table id="myTable">
+        <tr>
+            <td>row 1</td>
+            <td>row2</td>
+        </tr>
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2</td>
+        </tr>
+    </table>
+    <input type="button" onclick="changeContent()" value="change Content">
+
+    <script>
+        function changeContent() {
+            var table = document.getElementById("myTable");
+            for (var i = 0; i < table.rows.length; i++) {
+                for (var j = 0; j < table.rows[i].cells.length; j++) {
+                    table.rows[i].cells[j].innerHTML = "ABC";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

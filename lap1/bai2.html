@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+</head>
+
+<body>
+    <form id="form" onsubmit="getvalue(name.value,lname.value)">
+        Frist Name:<input type="text" id="name" name="name" value="khanh"> </br>
+        Last Name:<input type="text" id="lname" name="lname" value="tran"> </br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        var x, y;
+
+        function getvalue() {
+            x = document.getElementById('name').value;
+            y = document.getElementById('lname').value;
+            alert(y + " " + x);
+
+
+        }
+    </script>
+
+</body>
+
+</html>

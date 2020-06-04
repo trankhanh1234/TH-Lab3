@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai8</title>
+</head>
+
+<body>
+    <form action="">
+        <select id="colorSelect">
+            <option value=""> red</option>
+            <option value=""> green</option>
+            <option value=""> white</option>
+            <option value=""> black</option>
+
+        </select>
+        <input type="button" onclick="removecolor()" value="Remove">
+        <script>
+            function removecolor() {
+                var x = document.getElementById('colorSelect');
+                x.remove(x.selectedIndex);
+
+
+
+            }
+        </script>
+
+    </form>
+
+</body>
+
+</html>

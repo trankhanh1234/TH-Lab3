@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai7</title>
+</head>
+
+<body>
+    <table id="myTable2" border="1">
+
+
+    </table>
+    <form action="#">
+        <input type="button" onclick="createTable(3,5)" value="Create ">
+    </form>
+    <script>
+        function createTable(a, b) {
+            var table = document.getElementById("myTable2");
+            for (var i = 0; i < a; i++) {
+                table.insertRow(i);
+                for (var j = 0; j < b; j++) {
+                    table.rows[i].insertCell(j).innerHTML = "Row" + i + " Cell" + j;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
